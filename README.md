@@ -45,7 +45,6 @@
 ## Features
 
 - **Real-time Messaging**: Enables users to send and receive messages instantly.
-- **User Authentication**: Secure user login and registration.
 - **Room Management**: Create and join chat rooms.
 - **Message Persistence**: Store and retrieve messages from a database.
 - **Responsive Design**: Accessible on both desktop and mobile devices.
