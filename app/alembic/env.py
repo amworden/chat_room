@@ -16,7 +16,6 @@ from app.database.postgres import Base
 from app.models.user import User
 from app.models.room import Room
 from app.models.message import Message
-from app.models.room_member import room_members
 
 target_metadata = Base.metadata
 

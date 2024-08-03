@@ -31,6 +31,17 @@ services:
     depends_on:
       - postgres
 
-
+  nextjs:
+    container_name: nextjs
+    build:
+        context: .
+        dockerfile: next.Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    working_dir: /app
+    command: npm run dev
+    restart: on-failure
 volumes:
   postgres_data:
