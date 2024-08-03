@@ -1,0 +1,10 @@
+fastapi[all]
+uvicorn
+databases
+asyncpg
+sqlalchemy
+psycopg2-binary
+python-dotenv
+websockets
+pytest
+httpx
