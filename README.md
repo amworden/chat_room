@@ -346,23 +346,35 @@
    ```sh
    git clone https://github.com/amworden/chat_room
     ```
-2. Change into the project directory and run the docker-compose command:
+2. Create a `.env` file in the project python director and add the following environment variables:
+
+    ```sh
+   touch app/.env
+    ```
+    ```sh
+    POSTGRES_USER=postgres
+    POSTGRES_PASSWORD=postgres
+    POSTGRES_DB=chat_room
+    POSTGRES_HOST=postgres
+    POSTGRES_PORT=5432
+    ```
+3. Change into the project directory and run the docker-compose command:
 
     ```sh
     cd chat_room && docker-compose up -d --build 
     ```
-3. Apply the migrations:
+4. Apply the migrations:
 
     ```sh
     docker-compose exec python alembic upgrade head
     ```
-4. The application will be accessible at `http://localhost:3000`.
-5. To run the tests, execute:
+5. The application will be accessible at `http://localhost:3000`.
+6. To run the tests, execute:
 
     ```sh
     docker-compose exec python pytest
     ```
-6. To stop the application, run:
+7. To stop the application, run:
 
     ```sh
     docker-compose down
