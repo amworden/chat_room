@@ -368,3 +368,7 @@
     ```sh
     docker-compose down
     ```
+   
+
+### Database Structure
+![img.png](img.png)
